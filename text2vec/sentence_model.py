@@ -44,8 +44,8 @@ class EncoderType(Enum):
 class SentenceModel:
     def __init__(
             self,
-           # model_name_or_path: str = "shibing624/text2vec-base-chinese",
-            model_name_or_path: str = "/data/agl/models/text2vec-large-chinese",
+            model_name_or_path: str = r"D:\\workspace\\chatglm\\text2vec-large-chinese",
+            # model_name_or_path: str = "text2vec-large-chinese",
             encoder_type: Union[str, EncoderType] = "MEAN",
             max_seq_length: int = 256,
             device: Optional[str] = None,
